@@ -5,9 +5,9 @@
 #include <ctype.h>
 const int max_attempts = 9;
 
-void display(char word[], int guessed[]);
-int wordG(int guessed[], int length);
-void draw(int left);
+void display(char word[], int guessed[]);// displays current form of the word
+int wordG(int guessed[], int length);// checks if the word has been guessed
+void draw(int left);// draws the hangman graphic based on the number of attempts
 int main() {
     int playagain = 1;
     while (playagain) 
